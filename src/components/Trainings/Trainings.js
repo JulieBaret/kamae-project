@@ -57,7 +57,7 @@ const Trainings = () => {
 
     const sortOrder = ["À commencer", "Défaite", "Victoire"];
 
-    const compare = (a, b) => {
+    const compareTrainings = (a, b) => {
         if (sortOrder.indexOf(a.status) < sortOrder.indexOf(b.status)) {
             return -1;
         }
@@ -87,7 +87,7 @@ const Trainings = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {data.sort(compare)
+                        {data.sort(compareTrainings)
                             .map((item, index) => (
                                 <TrainingsList item={item} index={index} />
                             ))}

@@ -16,5 +16,5 @@ thead {
 }
 
 th {
-    @apply px-6 py-3;
+    @apply px-6 py-3 font-medium;
 }
