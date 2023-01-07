@@ -13,10 +13,14 @@ const ListPractices = ({ item, index }) => {
                 {item.status}
             </td>
             <td className="px-6 py-4">
-                <button class="bg-purple  border border-purple hover:bg-white hover:text-purple text-white font-semibold py-2 px-4 rounded hover:shadow-none shadow-lg">
-                    Go!
-                </button>
+            {item.status!=="Victoire" ? (
+            <button class="bg-purple  border border-purple hover:bg-white hover:text-purple text-white font-semibold py-2 px-4 rounded hover:shadow-none shadow-lg">
+                Go!
+            </button> 
+            ) : null}
             </td>
+
+
         </tr>
 
 
