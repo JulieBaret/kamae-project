@@ -5,13 +5,11 @@ import Header from './layouts/Header/Header';
 
 function App() {
   return (
-    <main>
       <div className="App">
         <Header />
         <Body />
         <Footer />
       </div>
-    </main>
 
   );
 }

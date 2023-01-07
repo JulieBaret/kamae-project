@@ -9,6 +9,6 @@ body {
   @apply bg-white;
 }
 
-main {
-  @apply flex justify-center;
+.App {
+  @apply flex flex-col justify-center;
 }
