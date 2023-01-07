@@ -6,12 +6,13 @@ nav {
 
 .navbar {
     @apply flex items-center;
-    width: 92.5vw;
+    width: 93vw;
 }
 
 .logo {
-    @apply w-20 object-contain;
-    margin-top: 11px;
+    @apply object-contain;
+    margin-top: 9px;
+    width: 5rem;
 }
 
 @media (max-width: 680px) {
@@ -21,7 +22,7 @@ nav {
     }
 
     .navbar {
-        width: 97.5vw;
+        width: 100vw;
     }
 
     .logo {

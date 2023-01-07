@@ -12,7 +12,7 @@ const Footer = () => {
         // </footer>
         <footer>
             <div>
-                Mini-projet réalisé Julie Baret dans le cadre d'un procecssus de recrutement au sein de kamae.
+                Mini-projet réalis par Julie Baret pour kamaé
             </div>
         </footer>
     );
