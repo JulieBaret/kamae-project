@@ -56,11 +56,30 @@ const Practices = () => {
     console.log(data[0].title);//Logs : Introduction Cybersécurité
     return (
         <div className="list-container">
-            <ul>
+<div class="relative overflow-x-auto rounded w-auto shadow cursor-default">
+    <table class="w-full text-sm text-left">
+        <thead class="text-xs text-white bg-orange">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Titre
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Catégorie
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Statut
+                </th>
+                <th scope="col" class="px-6 py-3">
+                </th>
+            </tr>
+        </thead>
+                <tbody>
                     {data.map((item, index) => (
-                        <ListPractices item={item} index={index}/>
+                        <ListPractices item={item} index={index} />
                     ))}
-            </ul>
+                </tbody>
+            </table>
+        </div>
         </div>
     );
 };

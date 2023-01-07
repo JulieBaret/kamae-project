@@ -2,25 +2,22 @@ import React from 'react';
 
 const ListPractices = ({ item, index }) => {
     return (
-        <div className="flex flex-col mt-4 w-full items-center justify-center rounded-lg shadow">
-            <div className="flex flex-col w-full">
-                    <li key={index} className="flex flex-row">
-                        <div className="select-none cursor-pointer flex flex-1 items-center p-4">
-                            <div className="flex-1 pl-1">
-                                <div className="font-medium">{item.title}</div>
-                                <div className="text-xs text-orange">{item.category}</div>
-                            </div>
-                            <div className="flex flex-row items-center">
-                                <div className="text-xs">{item.status}</div>
-                                
-                            </div>
-                            <button>
-                                    Go!
-                                </button>
-                        </div>
-                    </li>
-                </div>
-            </div>
+        <tr className="hover:bg-grey text-xs text-black">
+            <th scope="row" className="px-6 py-4 font-normal">
+                {item.title}
+            </th>
+            <td className="px-6 py-4 font-thin">
+                {item.category}
+            </td>
+            <td className="px-6 py-4">
+                {item.status}
+            </td>
+            <td className="px-6 py-4">
+                <button class="bg-purple  border border-purple hover:bg-white hover:text-purple text-white font-semibold py-2 px-4 rounded hover:shadow-none shadow-lg">
+                    Go!
+                </button>
+            </td>
+        </tr>
 
 
     );
