@@ -1,23 +1,23 @@
 import React from 'react';
+import Button from '../Button/Button';
+import './TrainingsList.css';
 
 const TrainingsList = ({ item, index }) => {
     return (
-        <tr className="hover:bg-grey text-xs text-black">
-            <th scope="row" className="px-6 py-4 font-normal">
+        <tr className="table-instance">
+            <th scope="row" className="title-col">
                 {item.title}
             </th>
-            <td className="px-6 py-4 font-thin">
+            <td className="category-col">
                 {item.category}
             </td>
-            <td className="px-6 py-4">
+            <td className="status-col">
                 {item.status}
             </td>
-            <td className="px-6 py-4">
+            <td className="button-col">
             {item.status!=="Victoire" ? (
-            <button class="bg-purple  border border-purple hover:bg-white hover:text-purple text-white font-semibold py-2 px-4 rounded hover:shadow-none shadow-lg">
-                Go!
-            </button> 
-            ) : null}
+            <Button />
+            ) : null }
             </td>
 
 

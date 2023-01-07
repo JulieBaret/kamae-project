@@ -73,16 +73,16 @@ const Trainings = () => {
                 <table>
                     <thead>
                         <tr>
-                            <th scope="col">
+                            <th scope="col" className="head-title-col">
                                 Titre
                             </th>
-                            <th scope="col">
+                            <th scope="col" className="head-category-col">
                                 Catégorie
                             </th>
-                            <th scope="col">
+                            <th scope="col" className="head-status-col">
                                 Statut
                             </th>
-                            <th scope="col">
+                            <th scope="col" className="head-button-col">
                             </th>
                         </tr>
                     </thead>
