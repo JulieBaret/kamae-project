@@ -1,0 +1,31 @@
+nav {
+    @apply w-screen flex justify-center;
+    background-color: white;
+    padding-bottom: 9px;
+}
+
+.navbar {
+    @apply flex items-center;
+    width: 92.5vw;
+}
+
+.logo {
+    @apply w-20 object-contain;
+    margin-top: 11px;
+}
+
+@media (max-width: 680px) {
+    nav {
+        @apply bg-white;
+        padding-bottom: 9px;
+    }
+
+    .navbar {
+        width: 97.5vw;
+    }
+
+    .logo {
+        margin-top: 7px;
+        width: 5.7rem;
+    }
+}

@@ -1,14 +1,18 @@
 import './App.css';
+import Body from './layouts/Body/Body';
+import Footer from './layouts/Footer/Footer';
+import Header from './layouts/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1 className="font-display">
-      Hello world!
-    </h1>
-      </header>
-    </div>
+    <main>
+      <div className="App">
+        <Header />
+        <Body />
+        <Footer />
+      </div>
+    </main>
+
   );
 }
 

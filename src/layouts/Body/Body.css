@@ -1,0 +1,7 @@
+.body-container {
+    @apply h-80 flex items-center justify-center mb-10;
+}
+
+.heading {
+    @apply text-center font-body font-semibold text-2xl;
+}
