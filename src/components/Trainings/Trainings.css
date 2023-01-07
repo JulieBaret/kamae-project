@@ -1,0 +1,20 @@
+.table-container {
+    @apply mt-8;
+}
+
+.table-content {
+    @apply relative overflow-x-auto rounded w-auto shadow cursor-default;
+}
+
+table {
+    @apply text-left;
+}
+
+thead {
+    @apply text-white bg-orange;
+    font-size: 0.8rem;
+}
+
+th {
+    @apply px-6 py-3;
+}

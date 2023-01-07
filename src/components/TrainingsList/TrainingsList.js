@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListPractices = ({ item, index }) => {
+const TrainingsList = ({ item, index }) => {
     return (
         <tr className="hover:bg-grey text-xs text-black">
             <th scope="row" className="px-6 py-4 font-normal">
@@ -27,4 +27,4 @@ const ListPractices = ({ item, index }) => {
     );
 };
 
-export default ListPractices;
+export default TrainingsList;

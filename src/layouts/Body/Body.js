@@ -1,7 +1,7 @@
 import './Body.css';
 
 import React from 'react';
-import Practices from '../../components/Practices/Practices';
+import Trainings from '../../components/Trainings/Trainings';
 
 const Body = () => {
     return (
@@ -10,7 +10,7 @@ const Body = () => {
                 Liste des <span className="highlight">entraînements :</span>
             </div>
             <div>
-            <Practices />
+            <Trainings />
             </div>
         </div>
 
