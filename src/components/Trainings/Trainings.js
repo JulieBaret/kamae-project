@@ -1,98 +1,96 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import TrainingsList from '../TrainingsList/TrainingsList';
 import './Trainings.css';
 
+const initialTrainings = [
+    {
+        title: 'Introduction Cybersécurité',
+        category: 'Cybersécurité',
+        status: 'Victoire'
+    },
+    {
+        title: 'Protéger son WiFi personnel',
+        category: 'À la maison',
+        status: 'À commencer'
+    },
+    {
+        title: 'Je reconnais des données personnelles',
+        category: 'RGPD',
+        status: 'À commencer'
+    },
+    {
+        title: 'Reconnaître un mail de phishing',
+        category: 'Cybersécurité',
+        status: 'Défaite'
+    },
+    {
+        title: 'Bien utiliser son smartphone',
+        category: 'À la maison',
+        status: 'À commencer'
+    },
+    {
+        title: 'Choisir un mot de passe invincible',
+        category: 'Cybersécurité',
+        status: 'À commencer'
+    },
+    {
+        title: 'Limiter mon empreinte numérique',
+        category: 'À la maison',
+        status: 'À commencer'
+    },
+    {
+        title: 'Pourquoi le RGPD est important',
+        category: 'RGPD',
+        status: 'À commencer'
+    },
+    {
+        title: 'Introduction RGPD',
+        category: 'RGPD',
+        status: 'Défaite'
+    }
+];
+
 const Trainings = () => {
-    const trainings = [
-        {
-            title: 'Introduction Cybersécurité',
-            category: 'Cybersécurité',
-            status: 'Victoire'
-        },
-        {
-            title: 'Protéger son WiFi personnel',
-            category: 'À la maison',
-            status: 'À commencer'
-        },
-        {
-            title: 'Je reconnais des données personnelles',
-            category: 'RGPD',
-            status: 'À commencer'
-        },
-        {
-            title: 'Reconnaître un mail de phishing',
-            category: 'Cybersécurité',
-            status: 'Défaite'
-        },
-        {
-            title: 'Bien utiliser son smartphone',
-            category: 'À la maison',
-            status: 'À commencer'
-        },
-        {
-            title: 'Choisir un mot de passe invincible',
-            category: 'Cybersécurité',
-            status: 'À commencer'
-        },
-        {
-            title: 'Limiter mon empreinte numérique',
-            category: 'À la maison',
-            status: 'À commencer'
-        },
-        {
-            title: 'Pourquoi le RGPD est important',
-            category: 'RGPD',
-            status: 'À commencer'
-        },
-        {
-            title: 'Introduction RGPD',
-            category: 'RGPD',
-            status: 'Défaite'
-        }
-    ];
 
-    const [data, setData] = useState(trainings);
+    const [trainings, setTrainings] = useState(initialTrainings);
 
-    console.log(data[0].title); //Log : Protéger son WiFi personnel
+    console.log(trainings[0].title); //Log : Protéger son WiFi personnel
 
-    const sortOrder = ["À commencer", "Défaite", "Victoire"];
+    // function handleTrainings(titre) {
+    //     updateTrainings(draft => {
+    //         const training = draft.find(a =>
+    //         a.title === titre
+    //         );
+    //         training.status = "Victoire";
+    //     });
+    // }
 
-    const compareTrainings = (a, b) => {
-        if (sortOrder.indexOf(a.status) < sortOrder.indexOf(b.status)) {
-            return -1;
-        }
-        if (sortOrder.indexOf(a.status) > sortOrder.indexOf(b.status)) {
-            return 1;
-        }
-        return 0;
+    // function handleTrainings(trainingIndex) {
+    //     setTrainings(trainings.map((el, i) => {
+    //         if (i === trainingIndex) {
+    //         // Create a *new* object with changes
+    //         return { ...el, status: "Victoire" };
+    //         } else {
+    //         // No changes
+    //         return el;
+    //         }
+    //     }));
+    // }
+
+    function handleTrainings(titre, newStatus) {
+        setTrainings(trainings.map(el => {
+            if (el.title === titre) {
+            return { ...el, status: newStatus };
+            } else {
+            return el;
+            }
+        }));
     }
 
     return (
         <div className="table-container">
             <div className="table-content">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col" className="head-title-col">
-                                Titre
-                            </th>
-                            <th scope="col" className="head-category-col">
-                                Catégorie
-                            </th>
-                            <th scope="col" className="head-status-col">
-                                Statut
-                            </th>
-                            <th scope="col" className="head-button-col">
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.sort(compareTrainings)
-                            .map((item, index) => (
-                                <TrainingsList item={item} index={index} />
-                            ))}
-                    </tbody>
-                </table>
+            <TrainingsList trainings={trainings} onHandle={handleTrainings}/>                
             </div>
         </div>
     );
