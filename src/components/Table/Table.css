@@ -47,53 +47,6 @@ th {
     @apply text-left;
 }
 
-/* category column */
-.category-col {
-    @apply px-1 sm:px-6;
-    @apply font-semibold;
-    @apply w-16 sm:w-24 md:w-44;
-}
-
-/* each cases */
-.category-RGPD {
-    @apply bg-light_blue text-blue;
-    @apply mr-2 px-4 py-2;
-    @apply rounded-full;
-}
-
-.category-Home {
-    @apply bg-light_yellow text-yellow;
-    @apply mr-2 px-4 py-2;
-    @apply rounded-full;
-}
-
-.category-Cyber {
-    @apply bg-light_red text-red;
-    @apply mr-2 px-4 py-2;
-    @apply rounded-full;
-}
-
-/* status column */
-.status-col {
-    @apply font-semibold;
-    @apply px-2 sm:px-6;
-    @apply w-20 sm:w-28 md:w-44;
-}
-
-/* each cases */
-.status-start {
-    @apply text-purple;
-}
-
-.status-winning {
-    @apply text-green;
-}
-
-.status-defeat {
-    @apply text-black;
-}
-
-
 /* button */
 .button-col {
     @apply pr-3 sm:pr-6;

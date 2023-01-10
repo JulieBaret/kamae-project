@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Table from '../Table/Table';
 import './Trainings.css';
 
@@ -50,34 +50,13 @@ const initialTrainings = [
     }
 ];
 
+
 const Trainings = () => {
-
     const [trainings, setTrainings] = useState(initialTrainings);
-
     console.log(trainings[0].title); //Log : Protéger son WiFi personnel
 
-    // function handleTrainings(titre) {
-    //     updateTrainings(draft => {
-    //         const training = draft.find(a =>
-    //         a.title === titre
-    //         );
-    //         training.status = "Victoire";
-    //     });
-    // }
-
-    // function handleTrainings(trainingIndex) {
-    //     setTrainings(trainings.map((el, i) => {
-    //         if (i === trainingIndex) {
-    //         // Create a *new* object with changes
-    //         return { ...el, status: "Victoire" };
-    //         } else {
-    //         // No changes
-    //         return el;
-    //         }
-    //     }));
-    // }
-
-    function handleTrainings(titre, newStatus) {
+    //useCallback ??
+    const changeStatus = useCallback((titre, newStatus) => {
         setTrainings(trainings.map(el => {
             if (el.title === titre) {
             return { ...el, status: newStatus };
@@ -85,11 +64,11 @@ const Trainings = () => {
             return el;
             }
         }));
-    }
+    }, [trainings]);
 
     return (
             <div className="table-content">
-                <Table trainings={trainings} onHandle={handleTrainings}/>                
+                <Table trainings={trainings} changeStatus={changeStatus}/>                
             </div>
     );
 };
