@@ -1,4 +1,4 @@
 footer {
-    @apply font-display text-center font-light mt-20 mb-6;
+    @apply font-heading text-center font-light mt-20 mb-6;
     font-size: 0.7em;
 }

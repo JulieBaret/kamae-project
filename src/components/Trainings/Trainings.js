@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TrainingsList from '../TrainingsList/TrainingsList';
+import Table from '../Table/Table';
 import './Trainings.css';
 
 const initialTrainings = [
@@ -88,11 +88,9 @@ const Trainings = () => {
     }
 
     return (
-        <div className="table-container">
             <div className="table-content">
-            <TrainingsList trainings={trainings} onHandle={handleTrainings}/>                
+                <Table trainings={trainings} onHandle={handleTrainings}/>                
             </div>
-        </div>
     );
 };
 

@@ -1,42 +1,4 @@
-.table-container {
-    @apply mt-8;
-}
-
 .table-content {
     @apply relative overflow-x-auto rounded w-auto shadow cursor-default;
 }
 
-table {
-    @apply text-left;
-}
-
-thead {
-    @apply text-white bg-orange;
-    font-size: 0.8rem;
-}
-
-th {
-    @apply pl-6 py-3 font-medium;
-}
-
-.head-title-col {
-    @apply pl-3 sm:pl-6 py-4;
-}
-
-.head-category-col {
-    @apply px-2 sm:px-6 py-4;
-}
-
-.head-status-col {
-    @apply px-2 sm:px-6 py-4;
-}
-
-.head-button-col {
-    @apply pr-3 sm:pr-6 py-4;
-}
-
-@media (max-width: 680px) {
-    thead {
-        font-size: 0.7rem;
-    }
-}

@@ -1,0 +1,119 @@
+.table-bloc {
+    @apply inline-block min-w-full;
+}
+
+table {
+    @apply min-w-full;
+    @apply text-center;
+}
+
+/* head of the table */
+thead {
+    @apply text-white bg-orange;
+    font-size: 1rem;
+}
+
+th {
+    @apply pl-6 py-3;
+}
+
+/* columns titles */
+.head-title-col {
+    @apply pl-2 sm:pl-6 py-4;
+    @apply text-left;
+}
+
+.head-category-col {
+    @apply px-1 sm:px-6 py-4;
+}
+
+.head-status-col {
+    @apply px-1 sm:px-6 py-4;
+}
+
+.head-button-col {
+    @apply pr-2 sm:pr-6 py-4;
+}
+
+/* each instance on the table */
+.table-instance {
+    @apply hover:bg-grey text-black h-16;
+    font-size: 0.8rem;
+}
+
+/* title column */
+.title-col {
+    @apply pl-2 sm:pl-6;
+    @apply text-left;
+}
+
+/* category column */
+.category-col {
+    @apply px-1 sm:px-6;
+    @apply font-semibold;
+    @apply w-16 sm:w-24 md:w-44;
+}
+
+/* each cases */
+.category-RGPD {
+    @apply bg-light_blue text-blue;
+    @apply mr-2 px-4 py-2;
+    @apply rounded-full;
+}
+
+.category-Home {
+    @apply bg-light_yellow text-yellow;
+    @apply mr-2 px-4 py-2;
+    @apply rounded-full;
+}
+
+.category-Cyber {
+    @apply bg-light_red text-red;
+    @apply mr-2 px-4 py-2;
+    @apply rounded-full;
+}
+
+/* status column */
+.status-col {
+    @apply font-semibold;
+    @apply px-2 sm:px-6;
+    @apply w-20 sm:w-28 md:w-44;
+}
+
+/* each cases */
+.status-start {
+    @apply text-purple;
+}
+
+.status-winning {
+    @apply text-green;
+}
+
+.status-defeat {
+    @apply text-black;
+}
+
+
+/* button */
+.button-col {
+    @apply pr-3 sm:pr-6;
+    @apply w-16 sm:w-20 md:w-32;
+}
+
+button {
+    @apply bg-purple border border-purple hover:bg-white hover:text-purple text-white;
+    @apply font-semibold;
+    @apply py-2 sm:py-3 px-3 sm:px-8;
+    @apply rounded;
+    @apply hover:shadow-none shadow-lg;
+}
+
+@media (max-width: 680px) {
+    thead {
+        font-size: 0.8rem;
+    }
+
+    .table-instance {
+        font-size: 0.7rem;
+    }
+}

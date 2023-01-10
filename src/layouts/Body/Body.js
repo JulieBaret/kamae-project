@@ -9,7 +9,7 @@ const Body = () => {
             <div className="heading">
                 Liste des <span className="highlight">entraînements :</span>
             </div>
-            <div>
+            <div className="table-container">
             <Trainings />
             </div>
         </div>
