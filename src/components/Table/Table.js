@@ -9,7 +9,7 @@ const Table = ({ trainings, changeStatus }) => {
 
     const handleClick = ({ title }) => {
         const result = sortOrder[Math.floor(Math.random() * 2) + 1];
-        changeStatus(title, result)
+        changeStatus(title, result);
     }
 
     const sortedTrainings = useMemo(() => {
