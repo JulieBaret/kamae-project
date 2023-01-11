@@ -1,18 +1,17 @@
 nav {
     @apply w-screen flex justify-center;
-    background-color: white;
     padding-bottom: 9px;
 }
 
 .navbar {
     @apply flex items-center;
-    width: 93vw;
+    width: 95vw;
 }
 
 .logo {
     @apply object-contain;
-    margin-top: 9px;
-    width: 5rem;
+    margin-top: 18px;
+    width: 9rem;
 }
 
 @media (max-width: 680px) {

@@ -18,7 +18,13 @@
 }
 
 .category-cyber {
-    @apply bg-light_red text-red;
+    @apply bg-light_pink text-pink;
     @apply mr-2 px-4 py-2;
     @apply rounded-full;
+}
+
+@media (max-width: 680px) {
+    .category-col {
+        font-size: 0.6rem;
+    }
 }

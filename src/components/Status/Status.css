@@ -18,3 +18,8 @@
     @apply text-black;
 }
 
+@media (max-width: 680px) {
+    .status-col {
+        font-size: 0.6rem;
+    }
+}
