@@ -53,7 +53,7 @@ const Table = ({ trainings, changeStatus }) => {
                                 <Status status={item.status} />
                                 <td className="button-col">
                                     {item.status !== "Victoire" ? (
-                                        <button onClick={() => {handleClick(item)}}>Go!</button>
+                                        <button onClick={() => {handleClick(item)}}><span className="inside-button">Go!</span></button>
                                     ) : null}
                                 </td>
                             </tr>

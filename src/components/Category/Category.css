@@ -2,7 +2,6 @@
 .category-col {
     @apply px-1 sm:px-6;
     @apply font-semibold;
-    @apply w-16 sm:w-24 md:w-44;
 }
 
 /* each cases */
