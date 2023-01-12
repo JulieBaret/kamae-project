@@ -44,8 +44,8 @@ const Table = ({ trainings, changeStatus }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {sortedTrainings.map((item) => (
-                            <tr className="table-instance">
+                    {sortedTrainings.map((item, index) => (
+                            <tr className="table-instance" key={index}>
                                 <th scope="row" className="title-col">
                                     {item.title}
                                 </th>
