@@ -64,6 +64,7 @@ th {
 .title-col {
     @apply pl-2 sm:pl-6;
     @apply text-left;
+    @apply font-semibold;
 }
 
 /* button */

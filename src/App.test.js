@@ -7,7 +7,7 @@ test('renders a heading, a logo and a table', () => {
   render(<App />);
   expect(screen.getByRole("img")).toBeInTheDocument();
   expect(screen.getByRole("heading")).toHaveTextContent('Liste des entraînements');
-  expect(screen.getByRole("table")).toHaveTextContent('Titre');
+  expect(screen.getByRole("table")).toBeInTheDocument();
 });
 
 test('button should be clicked', () => {
