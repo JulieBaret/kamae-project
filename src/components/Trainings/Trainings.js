@@ -55,7 +55,6 @@ const Trainings = () => {
     const [trainings, setTrainings] = useState(initialTrainings);
     console.log(trainings[0].title); //Log : Protéger son WiFi personnel
 
-    //useCallback ??
     const changeStatus = useCallback((titre, newStatus) => {
         setTrainings(trainings.map(el => {
             if (el.title === titre) {

@@ -6,6 +6,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    extend : {
+      screens: {
+        'sm': '680px'
+      },
+    },
     colors: {
       white: '#FAF9FF',
       black: '#292929',
@@ -15,6 +20,7 @@ module.exports = {
       yellow: '#fbbf24',
       light_yellow:'#fef3c7',
       blue: '#0ea5e9',
+      dark_red: '#dc2626',
       light_blue: '#dbeafe',
       red: '#fb7185',
       light_red: '#ffe4e6',

@@ -11,7 +11,7 @@ const Status = ({ status }) => {
     const statusToEmoji = {
         "À commencer" : " 🥋",
         "Victoire": " ✅",
-        "Défaite": ""
+        "Défaite": " ❌"
     }
 
     return (

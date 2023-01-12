@@ -15,7 +15,7 @@
 }
 
 .status-defeat {
-    @apply text-black;
+    @apply text-dark_red;
 }
 
 @media (max-width: 680px) {
