@@ -1,16 +1,12 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({ sortOrder, item, changeStatus}) => {
+const Button = ({ item, handleClick }) => {
 
     return (
         <td className="button-col">
             {item.status !== "Victoire" ? (
-                <button onClick={() => { 
-                    const result = sortOrder[Math.floor(Math.random() * 2) + 1];
-                    changeStatus(item.title, result) }
-                }>
-                Go!</button>
+                <button onClick={() => { handleClick(item) }}><span className="inside-button">Go!</span></button>
             ) : null}
         </td>
     );

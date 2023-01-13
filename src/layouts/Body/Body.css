@@ -1,13 +1,15 @@
 .body-container {
     @apply flex flex-col items-center justify-center;
     @apply mb-10;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .heading {
-    @apply font-heading font-semibold text-2xl sm:text-4xl;
+    @apply font-bold;
     @apply text-black;
     width: 81vw;
+    font-weight: 600;
+    font-size: 40px;
 }
 
 .highlight {
@@ -16,13 +18,14 @@
 
 .table-container {
     @apply font-body;
-    @apply mt-2 md:mt-8;
+    @apply mt-2 md:mt-6;
     width: 81vw;
 }
 
 @media (max-width: 680px) {
     .heading {
         width: 95vw;
+        font-size: 30px;
     }
 
     .table-container {

@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import Button from '../Button/Button';
 import Category from '../Category/Category';
 import Status from '../Status/Status';
 import './Table.css';
@@ -51,11 +52,7 @@ const Table = ({ trainings, changeStatus }) => {
                                 </td>
                                 <Category category={item.category} />
                                 <Status status={item.status} />
-                                <td className="button-col">
-                                    {item.status !== "Victoire" ? (
-                                        <button onClick={() => {handleClick(item)}}><span className="inside-button">Go!</span></button>
-                                    ) : null}
-                                </td>
+                                <Button item={item} handleClick={handleClick} />
                             </tr>
                         ))}
                 </tbody>
