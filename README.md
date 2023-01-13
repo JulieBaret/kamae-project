@@ -34,19 +34,23 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#test">Test</a></li>
   </ol>
 </details>
 
 ## About the project
 <p>
-This simple app display a list of trainings, sorted by status. The user can click "Go!" and will randomly win or loose the current training.
+This simple app offers a table of trainings related to cybersecurity and good use of new technologies. The user can click "Go!" to pass one training and will randomly win or loose it. Easy, right ?
 </p>
 <br>
 <p align="center">
-<img alt="app demo" src='https://raw.githubusercontent.com/JulieBaret/kamae-project/main/kamae.gif?token=GHSAT0AAAAAAB5F2IRJIXIEDBWMTQKNYOV2Y6AKO6Q')>
+<img alt="app demo" src='https://raw.githubusercontent.com/JulieBaret/kamae-project/main/kamae.gif?token=GHSAT0AAAAAAB5F2IRIXRPHVILRMGUL64MGY6BFXWQ')>
 </p>
+
+### Build with:
+- ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## Getting Started
 Clone down this repository.
@@ -56,11 +60,34 @@ You will need `node` and `npm` installed globally on your machine.
 
 ### Installation:
 
-`npm install`  
+`npm install` 
+
+### Folder structure:
+```
+.
+├── src .   » Project source code
+|       ├── layouts   » Layouts of the projet (Header, Body, Footer)
+|       |
+|       └── components    » Several components including ui elements such as Button, Category Column and Status Column
+|       
+├── public    » Public assets
+|
+├── README.md 
+|
+├── kamae.gif   » Screencapture of the project
+|
+├── package-lock.json
+|
+├── package.json
+|
+├── tailwind.config.js    » Configuration file for Tailwind, a CSS library
+|
+└── .gitignore
+```
 
 ## Usage
 
-### To Run Test Suite:  
+*To Run Test Suite:*
 
 `npm test`  
 
@@ -71,3 +98,5 @@ You will need `node` and `npm` installed globally on your machine.
 ### To Visit App:
 
 `localhost:3000`  
+
+##Documentation
