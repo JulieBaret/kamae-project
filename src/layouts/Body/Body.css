@@ -5,7 +5,7 @@
 }
 
 .heading {
-    @apply font-bold;
+    @apply font-body;
     @apply text-black;
     width: 81vw;
     font-weight: 600;
