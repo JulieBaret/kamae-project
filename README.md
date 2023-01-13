@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/kamae-x-julie-baret.png" alt="Logo" width="600">
+  <img src="./assets/kamae-x-julie.png" alt="Logo" width="600">
   
   <p align="center">
   <a href="#about-the-project">About the project</a> &nbsp;&bull;&nbsp;
