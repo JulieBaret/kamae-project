@@ -1,3 +1,4 @@
+<!-- HEADER -->
 <div align="center">
   <img src="./assets/kamae-x-julie.png" alt="Logo" width="600">
   
@@ -5,13 +6,14 @@
   <a href="#about-the-project">About the project</a> &nbsp;&bull;&nbsp;
   <a href="#getting-started">Getting Started</a> &nbsp;&bull;&nbsp;
   <a href="#usage">Usage</a> &nbsp;&bull;&nbsp;
-  <a href="#test">Test</a>
+  <a href="#test">Test</a>  &nbsp;&bull;&nbsp;
+  <a href="#documentation">Documentation</a>
   </p>
 
   <p align="center">
     Mini-project developed for an appliance at kamaé.
     <br />
-    <a href=""><strong>Here are the instructions »</strong></a>
+    <a href="./assets/kamae-mini-projet-dev.pdf"><strong>Here are the instructions »</strong></a>
   </p>
 </div>
 
@@ -32,13 +34,18 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#folder-structure">Folder structure</a></li>
+      </ul>
+    </li>
     <li><a href="#test">Test</a></li>
     <li><a href="#documentation">Documentation</a></li>
   </ol>
 </details>
 
-## About the project
+<!-- ABOUT THE PROJECT -->
+# About the project
 <p>
 This simple app offers a table of trainings related to cybersecurity and good use of new technologies. The user can click "Go!" to pass one training and will randomly win or loose it. Easy, right ?
 </p>
@@ -51,18 +58,32 @@ This simple app offers a table of trainings related to cybersecurity and good us
 - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<br>
 
-## Getting Started
+<!-- GETTING STARTED -->
+# Getting Started
 Clone down this repository.
 
-### Prerequisites:
+## Prerequisites:
 You will need `node` and `npm` installed globally on your machine.  
 
-### Installation:
+## Installation:
 
 `npm install` 
+<p></p><br>
 
-### Folder structure:
+<!-- USAGE -->
+# Usage
+
+To launch the project, you'll first have to __start the server__ with this command:
+
+`npm start`  
+
+Then, you'll be able to __visit the app__ at:
+
+`localhost:3000`
+
+## Folder structure:
 ```
 .
 ├── src .   » Project source code
@@ -73,7 +94,7 @@ You will need `node` and `npm` installed globally on your machine.
 |       
 ├── public    » Public assets
 |
-├── assets    » Screenshots and picture for the README.md file
+├── assets    » Screenshot, picture and pdf for the README.md file
 |
 ├── README.md   » Current file
 |
@@ -85,21 +106,25 @@ You will need `node` and `npm` installed globally on your machine.
 |
 └── .gitignore
 ```
+<br>
 
-## Usage
+<!-- TEST -->
+# Test
 
-__To Start Server:__
+One test suite with __6 tests__ :
+- the home page should render a heading, a logo and a table;
+- the "Go!" button should be clickable;
+- the table should have four columns (one for button included);
+- the table should have the correct column headers;
+- clicking the "Go!" button should decrease the number of trainings to start;
+- clicking the "Go!" button should increase the number of trainings won or defeat;
 
-`npm start`  
-
-__To Visit App:__
-
-`localhost:3000` 
-
-## Test
-
-__To Run Test Suite:__
+Command to __run the test suite__:
 
 `npm test`  
+<br>
 
-## Documentation
+<!-- DOCUMENTATION -->
+# Documentation
+- [Tailwind documentation](https://tailwindcss.com/)
+- [React.js documentation](https://beta.reactjs.org/)
