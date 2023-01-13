@@ -11,7 +11,7 @@
   </p>
 
   <p align="center">
-    Mini-project developed for an appliance at kamaé.
+    Mini-project developed for an application for Kamaé.
     <br />
     <a href="./assets/kamae-mini-projet-dev.pdf"><strong>Here are the instructions »</strong></a>
   </p>
@@ -47,7 +47,7 @@
 <!-- ABOUT THE PROJECT -->
 # About the project
 <p>
-This simple app offers a table of trainings related to cybersecurity and good use of new technologies. The user can click "Go!" to pass one training and will randomly win or loose it. Easy, right ?
+This simple app offers a table of training exercises related to cybersecurity and the correct use of new technologies. The user can click "Go!" to complete one training exercise and will randomly win or lose. Easy, right ?
 </p>
 <br>
 <p align="center">
