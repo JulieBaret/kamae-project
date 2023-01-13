@@ -1,5 +1,6 @@
 import { render, screen, fireEvent, cleanup} from '@testing-library/react';
 import App from './App';
+import Trainings from './components/Trainings/Trainings';
 
 afterEach(cleanup)
 
@@ -11,20 +12,20 @@ test('renders a heading, a logo and a table', () => {
 });
 
 test('button should be clicked', () => {
-  render(<App />);
+  render(<Trainings />);
   const button = screen.getAllByRole('button').at(0);
   fireEvent.click(button);
   expect(button).toBeValid();
 })
 
 test('table should have four columns', () => {
-  render(<App />);
+  render(<Trainings />);
   const tableheaders = screen.getAllByRole('columnheader');
   expect(tableheaders).toHaveLength(4);
 });
 
 test('columns should be named Titre Catégorie and Statut', () => {
-  render(<App />);
+  render(<Trainings />);
   const tableheader1 = screen.getAllByRole('columnheader').at(0);
   const tableheader2 = screen.getAllByRole('columnheader').at(1);
   const tableheader3 = screen.getAllByRole('columnheader').at(2);
@@ -34,7 +35,7 @@ test('columns should be named Titre Catégorie and Statut', () => {
 });
 
 test('trainings to start should decrease when button row 1 is clicked', () => {
-  render(<App />);
+  render(<Trainings />);
 
   const trainingsToStart = screen.getAllByText(/à commencer/i).length; 
   console.log(trainingsToStart); //Logs : 6
@@ -47,7 +48,7 @@ test('trainings to start should decrease when button row 1 is clicked', () => {
 })
 
 test('trainings won or lost should increase when button row 1 is clicked', () => {
-  render(<App />);
+  render(<Trainings />);
 
   const trainingsWon = screen.getAllByText(/victoire/i).length; 
   const trainingsLost = screen.getAllByText(/défaite/i).length; 
@@ -65,11 +66,3 @@ test('trainings won or lost should increase when button row 1 is clicked', () =>
     expect(screen.getAllByText(/victoire/i).length + screen.getAllByText(/défaite/i).length).toBe(trainingsDone+i);
   }
 })
-
-// test.only('trainings won or lost should increase when button row 1 is clicked', () => {
-//   render(<App />);
-
-//   const wifiTraining = screen.getByText('Choisir un mot de passe invincible'); 
-//   console.log(wifiTraining._debugOwner);
-
-// })
