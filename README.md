@@ -45,7 +45,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-# ✨ About the project
+## ✨ About the project
 <p>
 This simple app offers a table of training exercises related to cybersecurity and the correct use of new technologies. The user can click "Go!" to complete one training exercise and will randomly win or lose. Easy, right ?
 </p>
@@ -62,19 +62,19 @@ This simple app offers a table of training exercises related to cybersecurity an
 <br>
 
 <!-- GETTING STARTED -->
-# 🛠 Getting Started
+## 🛠 Getting Started
 Clone down this repository.
 
-## Prerequisites:
+### Prerequisites:
 You will need `node` and `npm` installed globally on your machine.  
 
-## Installation:
+### Installation:
 
 `npm install` 
 <p></p><br>
 
 <!-- USAGE -->
-# 🥋 Usage
+## 🥋 Usage
 
 To launch the project, you'll first have to __start the server__ with this command:
 
@@ -84,7 +84,7 @@ Then, you'll be able to __visit the app__ at:
 
 `localhost:3000`
 
-## Folder structure:
+### Folder structure:
 ```
 .
 ├── src .   » Project source code
@@ -110,7 +110,7 @@ Then, you'll be able to __visit the app__ at:
 <br>
 
 <!-- TEST -->
-# 🧪 Test
+## 🧪 Test
 To __run tests__, run the following command:
 
 `npm test`  
@@ -126,6 +126,6 @@ It will launch the __following tests:__
 <br>
 
 <!-- DOCUMENTATION -->
-# 📚 Documentation
+## 📚 Documentation
 - [Tailwind documentation](https://tailwindcss.com/)
 - [React.js documentation](https://beta.reactjs.org/)
