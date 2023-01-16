@@ -115,6 +115,9 @@ To __run tests__, run the following command:
 
 `npm test`  
 
+Then, press:
+`a`
+
 It will launch the __following tests:__
 1. the home page should render a heading, a logo and a table;
 2. the "Go!" button should be clickable;
