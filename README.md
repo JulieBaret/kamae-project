@@ -13,7 +13,7 @@
   <p align="center">
     Mini-project developed for an application for Kamaé.
     <br />
-    <a href="./assets/kamae-mini-projet-dev.pdf"><strong>The instructions »</strong></a>
+    <a href="./assets/kamae-mini-projet-dev.pdf"><strong>Guidelines »</strong></a>
   </p>
 </div>
 
