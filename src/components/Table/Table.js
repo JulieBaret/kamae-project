@@ -31,28 +31,28 @@ const Table = ({ trainings, changeStatus }) => {
             <table>
                 <thead>
                     <tr>
-                        <th scope="col" className="head-title-col">
+                        <th scope="col" className="head-title">
                             Titre
                         </th>
-                        <th scope="col" className="head-category-col">
+                        <th scope="col" className="head-category">
                             Catégorie
                         </th>
-                        <th scope="col" className="head-status-col">
+                        <th scope="col" className="head-status">
                             Statut
                         </th>
-                        <th scope="col" className="head-button-col">
+                        <th scope="col" className="head-button">
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    {sortedTrainings.map((item, index) => (
+                    {sortedTrainings.map((element, index) => (
                             <tr className="table-instance" key={index}>
-                                <td className="title-col">
-                                    {item.title}
+                                <td className="col-title">
+                                    {element.title}
                                 </td>
-                                <Category category={item.category} />
-                                <Status status={item.status} />
-                                <Button item={item} handleClick={handleClick} />
+                                <Category category={element.category} />
+                                <Status status={element.status} />
+                                <Button element={element} handleClick={handleClick} />
                             </tr>
                         ))}
                 </tbody>

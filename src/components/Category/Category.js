@@ -9,7 +9,7 @@ const Category = ({ category }) => {
     };
 
     return (
-        <td className="category-col">
+        <td className="col-category">
             <span className={categoryToClass[category]}>{category}</span>
         </td>
     );

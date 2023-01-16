@@ -36,21 +36,21 @@ th {
     @apply pl-6 py-3;
 }
 
-/* columns titles */
-.head-title-col {
+/* column headers */
+.head-title {
     @apply pl-2 sm:pl-6 py-4;
     @apply text-left;
 }
 
-.head-category-col {
+.head-category {
     @apply px-1 sm:px-6 py-4;
 }
 
-.head-status-col {
+.head-status {
     @apply px-1 sm:px-6 py-4;
 }
 
-.head-button-col {
+.head-button {
     @apply pr-2 sm:pr-6 py-4;
 }
 
@@ -61,7 +61,7 @@ th {
 }
 
 /* title column */
-.title-col {
+.col-title {
     @apply pl-2 sm:pl-6;
     @apply text-left;
     @apply font-semibold;

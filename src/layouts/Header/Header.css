@@ -16,7 +16,6 @@ nav {
 
 @media (max-width: 680px) {
     nav {
-        @apply bg-white;
         padding-bottom: 9px;
     }
 

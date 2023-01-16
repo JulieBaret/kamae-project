@@ -1,12 +1,12 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({ item, handleClick }) => {
+const Button = ({ element, handleClick }) => {
 
     return (
-        <td className="button-col">
-            {item.status !== "Victoire" ? (
-                <button onClick={() => { handleClick(item) }}><span className="inside-button">Go!</span></button>
+        <td className="col-button">
+            {element.status !== "Victoire" ? (
+                <button onClick={() => { handleClick(element) }}>Go!</button>
             ) : null}
         </td>
     );

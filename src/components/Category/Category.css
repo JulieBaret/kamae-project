@@ -1,5 +1,5 @@
 /* category column */
-.category-col {
+.col-category {
     @apply px-1 sm:px-6;
     @apply font-semibold;
 }
@@ -24,7 +24,7 @@
 }
 
 @media (max-width: 680px) {
-    .category-col {
+    .col-category {
         font-size: 0.6rem;
     }
 }

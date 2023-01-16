@@ -15,7 +15,7 @@ const Status = ({ status }) => {
     }
 
     return (
-        <td className="status-col">
+        <td className="col-status">
             <span className={statusToClass[status]}>{status}{statusToEmoji[status]}</span>
         </td>
     );

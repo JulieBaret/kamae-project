@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react';
 import Table from '../Table/Table';
 import './Trainings.css';
 
+// Initial set of data
 const initialTrainings = [
     {
         title: 'Introduction Cybersécurité',
@@ -55,12 +56,12 @@ const Trainings = () => {
     const [trainings, setTrainings] = useState(initialTrainings);
     console.log(trainings[0].title); //Log : Protéger son WiFi personnel
 
-    const changeStatus = useCallback((titre, newStatus) => {
-        setTrainings(trainings.map(el => {
-            if (el.title === titre) {
-            return { ...el, status: newStatus };
+    const changeStatus = useCallback((trainingTitle, newStatus) => {
+        setTrainings(trainings.map(element => {
+            if (element.title === trainingTitle) {
+            return { ...element, status: newStatus };
             } else {
-            return el;
+            return element;
             }
         }));
     }, [trainings]);
