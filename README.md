@@ -50,25 +50,25 @@
 This simple app offers a table of training exercises related to cybersecurity and the correct use of new technologies. The user can click "Go!" to complete one training exercise and will randomly win or lose. Easy, right ?
 </p>
 
-### 📷 Screencapture:
+### Screencapture:
 <p align="center">
 <img alt="app demo" src='./assets/kamae.gif')>
 </p>
 
-### 🤖 Built with:
+### Built with:
 - ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 <br>
 
 <!-- GETTING STARTED -->
-# 🏄 Getting Started
+# 🛠 Getting Started
 Clone down this repository.
 
-## 🚨 Prerequisites:
+## Prerequisites:
 You will need `node` and `npm` installed globally on your machine.  
 
-## 🛠 Installation:
+## Installation:
 
 `npm install` 
 <p></p><br>
@@ -84,7 +84,7 @@ Then, you'll be able to __visit the app__ at:
 
 `localhost:3000`
 
-## 🏛 Folder structure:
+## Folder structure:
 ```
 .
 ├── src .   » Project source code
@@ -115,13 +115,13 @@ To __run tests__, run the following command:
 
 `npm test`  
 
-It will launch __six tests__:
-- the home page should render a heading, a logo and a table;
-- the "Go!" button should be clickable;
-- the table should have four columns (one for button included);
-- the table should have the correct column headers titles;
-- clicking the "Go!" button should decrease the number of trainings to start;
-- clicking the "Go!" button should increase the number of trainings won or defeat;
+It will launch the __following tests:__
+1. the home page should render a heading, a logo and a table;
+2. the "Go!" button should be clickable;
+3. the table should have four columns (one for button included);
+4. the table should have the correct column headers titles;
+5. clicking the "Go!" button should decrease the number of trainings to start;
+6. clicking the "Go!" button should increase the number of trainings won or defeat;
 
 <br>
 
