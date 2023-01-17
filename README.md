@@ -11,7 +11,7 @@
   </p>
 
   <p align="center">
-    Mini-project developed for an application for Makaé.
+    Mini-project developed for an application.
   </p>
 </div>
 
@@ -93,7 +93,7 @@ Then, you'll be able to __visit the app__ at:
 |       
 ├── public    » Public assets
 |
-├── assets    » Screenshot, picture and pdf for the README.md file
+├── assets    » Logo and screencapture of the project for the README.md file
 |
 ├── README.md   » Current file
 |
