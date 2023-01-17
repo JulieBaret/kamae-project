@@ -11,9 +11,7 @@
   </p>
 
   <p align="center">
-    Mini-project developed for an application for Kamaé.
-    <br />
-    <a href="./assets/kamae-mini-projet-dev.pdf"><strong>Guidelines »</strong></a>
+    Mini-project developed for an application for Makaé.
   </p>
 </div>
 

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <div>
-                Mini-projet réalisé par Julie Baret pour kamaé
+                Mini-projet réalisé par Julie Baret
             </div>
         </footer>
     );
